@@ -24,7 +24,7 @@ module tt_um_charlie2951_alu4bit (
   // List all unused inputs to prevent warnings
     wire _unused = &{ena,uio_in[3],uio_in[4],uio_in[5],uio_in[6],uio_in[7], 1'b0};
 
-    alu_4bit alu0(
+    alu alu0(
         .rst(!rst_n),
         .clk(clk),
         .A(ui_in[3:0]),
