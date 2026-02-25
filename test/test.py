@@ -10,7 +10,7 @@ async def test_alu_basic(dut):
     """Test the 4-bit ALU with basic operations"""
     
     # 1. Start the clock (10ns period = 100MHz)
-    cocotb.start_soon(Clock(dut.clk, 10, units="ns").start())
+    cocotb.start_soon(Clock(dut.clk, 10, unit="ns").start())
 
     # 2. Initialize inputs
     dut.ena.value = 1
@@ -19,7 +19,7 @@ async def test_alu_basic(dut):
     dut.rst_n.value = 0
 
     # 3. Reset sequence
-    await Timer(30, units="ns")
+    await Timer(30, unit="ns")
     dut.rst_n.value = 1
     await RisingEdge(dut.clk)
     
