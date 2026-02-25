@@ -45,11 +45,5 @@ module tb ();
       .clk    (clk),      // clock
       .rst_n  (rst_n)     // not reset
   );
-initial begin
-    clk=0; rst_n=0; ui_in=8'b00110010;uio_in=8'b0;ena=1;
-    #30 rst_n=1;
-    #30;
-    $finish;
-end
-always #5 clk=!clk;
+
 endmodule
