@@ -9,12 +9,12 @@ You can also include images in this folder and reference them in the markdown. E
 
 ## How it works
 
-Explain how your project works
+This is a simple 4 bit ALU. It takes two 4 bit number A and B. Max  8 different operation can be performed such as ADD, SUB, logical operation, (AND, OR, XOR), comparison and shift operation
 
 ## How to test
 
-Explain how to use your project
+Allply input A and B via DIP switches and select operation via switches and observe output on LEDs
 
 ## External hardware
 
-List external hardware used in your project (e.g. PMOD, LED display, etc), if any
+Switches and LEDs
