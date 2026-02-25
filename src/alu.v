@@ -1,5 +1,6 @@
 //sample demo 4 bit ALU
 //For Tiny tapeout
+/* verilator lint_off WIDTH */
 module alu(
     input wire rst, clk,
     input wire [3:0] A,B,
@@ -33,6 +34,7 @@ module alu(
     endcase
   end
 endmodule
+
 
 
 
