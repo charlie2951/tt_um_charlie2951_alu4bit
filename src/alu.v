@@ -1,6 +1,6 @@
 //sample demo 4 bit ALU
 //For Tiny tapeout
-module alu_4bit(
+module tt_um_charlie2951_alu4bit(
     input wire rst, clk,
     input wire [3:0] A,B,
     input wire [2:0] op,
@@ -33,3 +33,4 @@ module alu_4bit(
     endcase
   end
 endmodule
+
